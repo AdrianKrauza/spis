@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pl" http-equiv="A-Compatible" content="IE=edge">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spis Tresci </title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+        body {
+            background: #E3E3E3;
+        }
+
+        #title {
+            font-family: 'Playfair Display', serif;
+            font-size: 85px;
+            text-align: center;
+            color: #333333;
+            font-weight: bold;
+            display: block;
+            width: 500px;
+            margin: auto;
+
+        }
+
+        #boxs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: auto;
+            max-width: 1500px;
+        }
+
+        .box a:hover {
+            opacity: 0.75;
+            display: block;
+            text-decoration: underline;
+        }
+
+        .box p {
+            font-family: "Georgia";
+            color: #333333;
+            font-size: 25px;
+        }
+
+        .box p:nth-child(2) {
+            font-size: 18px;
+            font-family: "Arial";
+            color: "#6b6b6b"
+        }
+
+        .box {
+            width: 300px;
+            height: 350px;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 13px 1px #bbb;
+            position: relative;
+            margin: 30px;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .box a:last-child {
+            text-decoration: none;
+            color: white;
+            background: #E3E3E3;
+            border-radius: 20px;
+            padding: 15px 25px;
+            position: absolute;
+            bottom: 20px;
+            font-family: "Arial";
+        }
+
+        .breadcrumb {
+            margin: auto;
+            display: block;
+            width: 300px;
+
+        }
+
+        .breadcrumb a {
+
+            text-decoration: none;
+            color: white;
+        }
+
+        .breadcrumb ul {
+            list-style-type: none;
+            /* padding: 0; */
+        }
+
+        .breadcrumb__crumb {
+            padding: 20px;
+        }
+
+        .breadcrumb__crumb>a:before {
+            color: #fff;
+            content: "▼";
+            font-size: 10px;
+            margin: 0 3px;
+        }
+
+        .breadcrumb__crumb>a {
+            width: 191px;
+            box-sizing: border-box;
+            padding-bottom: 5px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            z-index: 200;
+            margin: auto;
+            border-bottom: 2px solid white;
+        }
+
+        .breadcrumb__crumb>a:hover {
+            height: 300px;
+        }
+
+        .breadcrumb__crumb>a:hover~.breadcrumbs-list {
+            display: block;
+        }
+
+        .breadcrumbs-list {
+            width: 151px;
+            border-top: 2px solid white;
+            display: none;
+            margin-top: 23px;
+            position: absolute;
+            z-index: 100;
+            background: #E3E3E3;
+            padding: 20px;
+        }
+
+        .breadcrumbs-list li {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Spis treści:</h1>
+    <div class="breadcrumb">
+        <ul>
+            <li class="breadcrumb__crumb"> <a href="https://www.logofirmowe.pl/logo-firmy-i-branze/">Markowy blog</a>
+                <ul class="breadcrumbs-list">
+                    <li> <a href="https://www.logofirmowe.pl/logo-firmy-i-branze/">Przykłady logo w branży</a> </li>
+                    <li> <a href="https://www.logofirmowe.pl/o/">Markowy blog</a> </li>
+                    <li> <a href="https://www.logofirmowe.pl/najlepsze-praktyki/">Najlepsze praktyki</a> </li>
+                    <li> <a href="https://www.logofirmowe.pl/trendy-i-inspiracje/">Trendy i inspiracje</a> </li>
+                    <li> <a href="https://www.logofirmowe.pl/ikony-i-ich-historie/">Ikony i ich historie</a> </li>
+                    <li> <a href="https://www.logofirmowe.pl/before-after/">Before &amp;
+                            After</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="boxs">
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-miasta-dzielnicy-gminy-powiatu/">
+                <p>
+                    Logo miasta, dzielnicy, gminy, powiatu. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-miasta-dzielnicy-gminy-powiatu/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-fundacji-organizacji-i-stowarzyszen/">
+                <p>
+                    Logo fundacji, organizacji i stowarzyszeń. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-fundacji-organizacji-i-stowarzyszen/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-transportowe-przewozowe-spedycja-logistyka/">
+                <p>Logo transportowe, przewozowe, spedycja, logistyka. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-transportowe-przewozowe-spedycja-logistyka/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-teatrow-galerii-muzeow-i-opery/">
+                <p>Logo teatrów, galerii, muzeów i opery. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-teatrow-galerii-muzeow-i-opery/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-firmy-wzory-przyklady/">
+                <p>Logo firmy ® </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-firmy-wzory-przyklady/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/grafika-logo-i-reklama-kultowych-marek/">
+                <p>
+                    Grafika, logo i reklama kultowych marek. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/grafika-logo-i-reklama-kultowych-marek/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-unijne-prawnicze-administracyjne/">
+                <p>Logo unijne, prawnicze, administracyjne </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-unijne-prawnicze-administracyjne/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-korporacji-przemyslu-i-energetyki/">
+                <p>Logo korporacji, przemysłu i energetyki. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-korporacji-przemyslu-i-energetyki/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-malej-firmy-handlowej-i-uslugowej/">
+                <p> Logo małej firmy handlowej i usługowej.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-malej-firmy-handlowej-i-uslugowej/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/tworzenie-logo-firmy/">
+                <p>Tworzenie logo firmy. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/tworzenie-logo-firmy/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/dobre-wzory-logo-przyklady-najlepszych-identyfikacji/">
+                <p> Dobre wzory logo. Przykłady najlepszych identyfikacji.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/dobre-wzory-logo-przyklady-najlepszych-identyfikacji/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/jak-zrobic-logo/">
+                <p>Jak zrobić logo? </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/jak-zrobic-logo/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/projekt-logo/">
+                <p> Projekt logo</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/projekt-logo/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-moda-fashion-i-logotypy-firm-odziezowych/">
+                <p> Logo moda, fashion i logotypy firm odzieżowych.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-moda-fashion-i-logotypy-firm-odziezowych/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-medyczne-przychodnie-szpitale-lekarze-i-kliniki/">
+                <p> Logo medyczne. Przychodnie szpitale Lekarze i kliniki.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-medyczne-przychodnie-szpitale-lekarze-i-kliniki/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-gabinetu-stomatologicznego-i-logotypy-ortodontyczne/">
+                <p>Logo stomatologiczne i ortodontyczne </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-gabinetu-stomatologicznego-i-logotypy-ortodontyczne/">Czytaj
+                dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-fitness-silowni-i-suplementow/">
+                <p> Logo fitness, siłowni i suplementów.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-fitness-silowni-i-suplementow/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-parku-architektury-dewelopera-i-osiedla/">
+                <p> Logo parku, architektury, dewelopera i osiedla.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-parku-architektury-dewelopera-i-osiedla/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-spa-resort-i-wellness/">
+                <p>Logo spa, resort i wellness. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-spa-resort-i-wellness/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-sportu-klubu-i-druzyny/">
+                <p> Logo sportu, klubu i drużyny.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-sportu-klubu-i-druzyny/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-kosmetyczne-fryzjer-perfumeria-solarium/">
+                <p>Logo kosmetyczne, fryzjer, perfumeria, solarium. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-kosmetyczne-fryzjer-perfumeria-solarium/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-biura-podrozy-hotel-hostel/">
+                <p> Logo biura podróży, hotel, hostel.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-biura-podrozy-hotel-hostel/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-komputerowe-it-programy-i-informatyka/">
+                <p>Logo komputerowe.
+                    programy, IT
+                    oraz informatyka. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-komputerowe-it-programy-i-informatyka/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-budowlane-firmy-remontowej-i-projektowej/">
+                <p>Logo budowlane firmy remontowej i projektowej. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-budowlane-firmy-remontowej-i-projektowej/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-apteki-i-logotypy-farmaceutyczne/">
+                <p> Logo apteki i logotypy farmaceutyczne</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-apteki-i-logotypy-farmaceutyczne/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-uczelni-szkoly-biblioteki-przedszkola/">
+                <p>Logo uczelni, szkoły, biblioteki, przedszkola. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-uczelni-szkoly-biblioteki-przedszkola/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-finanse-bank-fundusz-kantor/">
+                <p>Logo finansowe
+                    Od banku, przez fundusz, po kantor. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-finanse-bank-fundusz-kantor/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-ubezpieczenia-leasing-kredyt/">
+                <p>Logo ubezpieczenia, leasing, kredyt. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-ubezpieczenia-leasing-kredyt/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-pr-szkolenia-doradztwo-konsulting/">
+                <p>Logo PR, szkolenia, doradztwo, konsulting. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-pr-szkolenia-doradztwo-konsulting/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-restauracji-i-kawiarni/">
+                <p> Logo restauracji i kawiarni.</p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-restauracji-i-kawiarni/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-gastronomii-piekarnia-woda-cukiernia/">
+                <p>Logo sklepu, piekarnia, woda, cukiernia. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-gastronomii-piekarnia-woda-cukiernia/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-online-na-strone-internetowa-i-web-0/">
+                <p>Logo online, na stronę internetową i web 2.0 </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-online-na-strone-internetowa-i-web-0/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-agencji-nieruchomosci/">
+                <p>Logo agencji nieruchomości </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-agencji-nieruchomosci/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/znak-logo/">
+                <p>Znak logo ® </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/znak-logo/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/logo-lego-czyli-logo-dla-dzieci/">
+                <p>Logo lego, czyli logo dla dzieci. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/logo-lego-czyli-logo-dla-dzieci/">Czytaj dalej</a>
+        </div>
+        <div class="box">
+            <a href="https://www.logofirmowe.pl/marki-i-logo-samochodowe-warsztat-komis-taxi/">
+                <p>Marki i logo samochodowe:
+                    Warsztat, komis, taxi. </p>
+            </a>
+            <a href="https://www.logofirmowe.pl/marki-i-logo-samochodowe-warsztat-komis-taxi/">Czytaj dalej</a>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
